@@ -1,9 +1,10 @@
-const CACHE = 'wishlist-v2';
+const CACHE = 'wishlist-v3';
 const ASSETS = [
-  './',
-  './manifest.json',
-  './icon-192.png',
-  './icon-512.png',
+  '/ultra-wishlist/',
+  '/ultra-wishlist/index.html',
+  '/ultra-wishlist/manifest.json',
+  '/ultra-wishlist/icon-192.png',
+  '/ultra-wishlist/icon-512.png',
 ];
 
 self.addEventListener('install', e => {
@@ -31,6 +32,6 @@ self.addEventListener('fetch', e => {
         caches.open(CACHE).then(cache => cache.put(e.request, clone));
         return res;
       })
-      .catch(() => caches.match(e.request).then(r => r || caches.match('./')))
+      .catch(() => caches.match(e.request).then(r => r || caches.match('/ultra-wishlist/')))
   );
 });

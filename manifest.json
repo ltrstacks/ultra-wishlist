@@ -1,9 +1,9 @@
 {
-  "name": "Minha Wishlist",
+  "name": "Ultra Wishlist",
   "short_name": "Wishlist",
   "description": "Seus produtos favoritos em um só lugar",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/ultra-wishlist/",
+  "scope": "/ultra-wishlist/",
   "display": "standalone",
   "background_color": "#FAFAF8",
   "theme_color": "#2D6A4F",
